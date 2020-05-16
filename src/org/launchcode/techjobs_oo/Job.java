@@ -1,5 +1,7 @@
 package org.launchcode.techjobs_oo;
 
+import java.util.Objects;
+
 public class Job {
 
     private int id;
@@ -10,8 +12,43 @@ public class Job {
     private Location location;
     private PositionType positionType;
     private CoreCompetency coreCompetency;
+/////////////////////////
 
-    // TODO: Add two constructors - one to initialize a unique ID and a second to initialize the
+
+
+    public Job() {
+        id = nextId;
+        nextId++;
+    }
+    public Job(String name,  employer,
+                   location, positionType, coreCompetency) {
+        this.name = name;
+        this.employer = employeer;
+        this.location = location;
+        this.positionType = gpa;
+        this.coreCompetency = coreCompetency
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Job)) return false;
+        Job job = (Job) o;
+        return id == job.id &&
+                Objects.equals ( name, job.name ) &&
+                Objects.equals ( employer, job.employer ) &&
+                Objects.equals ( location, job.location ) &&
+                Objects.equals ( positionType, job.positionType ) &&
+                Objects.equals ( coreCompetency, job.coreCompetency );
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash ( id, name, employer, location, positionType, coreCompetency );
+    }
+
+
+
+// TODO: Add two constructors - one to initialize a unique ID and a second to initialize the
     //  other five fields. The second constructor should also call the first in order to initialize
     //  the 'id' field.
 
