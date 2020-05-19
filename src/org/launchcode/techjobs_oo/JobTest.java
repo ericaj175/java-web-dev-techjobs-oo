@@ -20,7 +20,6 @@ class JobTest {
     void testHashCode() {
     }
 }
-
 //ssertEquals, assertTrue, or assertFalse
 //assertFal(9, test_car.getGasTankLevel(), .001);
    //    6.3.2. testGasTankAfterExce

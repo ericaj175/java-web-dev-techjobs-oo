@@ -1,0 +1,15 @@
+Index: src/org/launchcode/techjobs_oo/JobTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/org/launchcode/techjobs_oo/JobTest.java	(revision 520dd584e2c53f129bd8cba96c066e70db067de9)
++++ src/org/launchcode/techjobs_oo/JobTest.java	(date 1589929021224)
+@@ -23,4 +23,4 @@
+ 
+ //ssertEquals, assertTrue, or assertFalse
+ //assertFal(9, test_car.getGasTankLevel(), .001);
+-   //     6.3.2. testGasTankAfterExce
+\ No newline at end of file
++   //    6.3.2. testGasTankAfterExce
+\ No newline at end of file
