@@ -14,20 +14,18 @@ public class Job {
     private CoreCompetency coreCompetency;
 /////////////////////////
 
-
-
     public Job() {
         id = nextId;
         nextId++;
     }
-    public Job(String name,  employer,
-                   location, positionType, coreCompetency) {
+    public Job(String name,  Employer employer,
+                   Location location, PositionType positionType, CoreCompetency coreCompetency) {
         this.name = name;
-        this.employer = employeer;
+        this.employer = employer;
         this.location = location;
-        this.positionType = gpa;
-        this.coreCompetency = coreCompetency
-
+        this.positionType = positionType;
+        this.coreCompetency = coreCompetency;
+    }
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -40,7 +38,7 @@ public class Job {
                 Objects.equals ( positionType, job.positionType ) &&
                 Objects.equals ( coreCompetency, job.coreCompetency );
     }
-
+      
     @Override
     public int hashCode() {
         return Objects.hash ( id, name, employer, location, positionType, coreCompetency );
