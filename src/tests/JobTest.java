@@ -14,7 +14,11 @@ class JobTest {
     public void testSettingJobId() {
         Job1 = new Job();
          Job2 = new Job();
-   // assertFalse ();
+
+         assertFalse(this.Job1.getId() == this.Job2.getId());
+         assertTrue ( this.Job2.getId() - this.Job1.getId () == 1);
+
+
     }
 }
 
