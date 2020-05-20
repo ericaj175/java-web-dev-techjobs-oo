@@ -21,8 +21,7 @@ class JobTest {
 
     }
 };
- @Test
-public void testJobConstructorSetsAllFields() {
+      public void testJobConstructorSetsAllFields() {
 
 
      new Job ("Product tester",
