@@ -38,7 +38,8 @@ public class Job {
                 Objects.equals ( positionType, job.positionType ) &&
                 Objects.equals ( coreCompetency, job.coreCompetency );
     }
-      
+
+
     @Override
     public int hashCode() {
         return Objects.hash ( id, name, employer, location, positionType, coreCompetency );
