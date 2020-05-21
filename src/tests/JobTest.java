@@ -22,16 +22,19 @@ class JobTest {
     }
     @Test
     public void testJobConstructorSetsAllFields() {
-        Job3 = new Job ();
-        new Job ( "Product tester",
+        Job3 = new Job ("Product tester");
                 new Employer ( "ACME" ),
                 new Location ( "Desert" ),
                 new PositionType ( "Quality control" ),
                 new CoreCompetency ( "Persistence" ) );
 
         assertTrue ( Job3 instanceof Job );
+        assertEquals ();
+
 
     }
+
+
     @Test
     public void testJobsForEquality()  {
 

@@ -26,6 +26,10 @@ public class Job {
         this.positionType = positionType;
         this.coreCompetency = coreCompetency;
     }
+
+    public Job(String product_tester) {
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
