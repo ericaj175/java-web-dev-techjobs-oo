@@ -26,7 +26,12 @@ class JobTest {
                 new Location ( "Desert" ),
                 new PositionType ( "Quality control" ),
                 new CoreCompetency ( "Persistence" ) );
-    }
+       //objectName instanceof ClassName
+        //Test the equals Method
+        // assertEquals (  );
+
+        assertTrue ("Product tester" instanceof new  Job);
+    };
 };
 
 
