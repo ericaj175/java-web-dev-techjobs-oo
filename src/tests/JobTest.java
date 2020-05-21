@@ -22,14 +22,16 @@ class JobTest {
     }
     @Test
     public void testJobConstructorSetsAllFields() {
-        Job3 = new Job ("Product tester");
+        Job3 = new Job ( "Product Tester",
                 new Employer ( "ACME" ),
                 new Location ( "Desert" ),
                 new PositionType ( "Quality control" ),
                 new CoreCompetency ( "Persistence" ) );
 
         assertTrue ( Job3 instanceof Job );
-        assertEquals ();
+        assertEquals(Job3.getName(), "Product Tester");
+        assertEquals(Job3.getLocation().getValue(), "Desert");
+        //assertEquals(new Location, )
 
 
     }
@@ -39,6 +41,8 @@ class JobTest {
     public void testJobsForEquality()  {
 
     }
+
+
 
 
 }
