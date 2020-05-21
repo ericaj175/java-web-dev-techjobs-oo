@@ -93,6 +93,10 @@ public class Job {
         return Objects.hash ( id, name, employer, location, positionType, coreCompetency );
     }
 
+   //?????
+    public void setId(int i) {
+    }
+
 
 // TODO: Add two constructors - one to initialize a unique ID and a second to initialize the
     //  other five fields. The second constructor should also call the first in order to initialize

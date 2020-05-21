@@ -32,7 +32,7 @@ class JobTest {
         assertEquals(Job3.getName(), "Product Tester");
         assertEquals(Job3.getLocation().getValue(), "Desert");
         assertEquals(Job3.getPositionType ().getValue (), "Quality control");
-        assertEquals(Job3.getCoreCompetency().getValue(),"Persistence" )
+        assertEquals(Job3.getCoreCompetency().getValue(),"Persistence" );
 
         //assertEquals(new Location, )
 
@@ -42,6 +42,11 @@ class JobTest {
 
     @Test
     public void testJobsForEquality()  {
+        Job job1 = new Job("picker");
+        Job job2 = new Job("picker");
+        job1.setId(1);
+        job2.setId(2);
+        assertNotEquals(job1, job2);
 
     }
 
