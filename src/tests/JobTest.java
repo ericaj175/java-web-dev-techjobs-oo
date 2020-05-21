@@ -8,12 +8,14 @@ import static org.junit.jupiter.api.Assertions.*;
 class JobTest {
     private Job Job1;
     private Job Job2;
+    private Job Job3;
 
 
     @Test
     public void testSettingJobId() {
         Job1 = new Job ();
         Job2 = new Job ();
+        Job3 = new Job ();
 
         assertFalse ( this.Job1.getId () == this.Job2.getId () );
         assertTrue ( this.Job2.getId () - this.Job1.getId () == 1 );
@@ -30,8 +32,8 @@ class JobTest {
         //Test the equals Method
         // assertEquals (  );
 
-        assertTrue ("Product tester" instanceof new  Job);
-    };
+        assertTrue (Job3 instanceof Job);
+    }
 };
 
 
