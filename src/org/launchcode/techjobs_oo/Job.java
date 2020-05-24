@@ -96,8 +96,13 @@ public class Job {
    //?????
     public void setId(int i) {
     }
+//TO STRING EXAMPLE?
+    public String toString() {
+        return name + " (Credits: " + numberOfCredits + ", GPA: " + gpa + ")";
+    }
 
-
+    Student person = new Student("Violet");
+System.out.println(person.toString());
 // TODO: Add two constructors - one to initialize a unique ID and a second to initialize the
     //  other five fields. The second constructor should also call the first in order to initialize
     //  the 'id' field.
