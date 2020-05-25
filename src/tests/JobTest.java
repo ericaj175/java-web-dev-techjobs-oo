@@ -57,11 +57,11 @@ class JobTest {
                 new PositionType ( "Quality control" ),
                 new CoreCompetency ( "Persistence" ) );
     String testString = "ID: " + job4.getId();
-    String testString2 = "Name: " + job4.getId();
-    String testString3 = "Employer: " + job4.getId();
-    String testString4 = "Location: " + job4.getId();
-    String testString5 = "PositionType: " + job4.getId();
-    String testString6 = "CoreCompetency: " + job4.getId();
+    String testString2 = "Name: " + job4.getName();
+    String testString3 = "Employer: " + job4.getEmployer();
+    String testString4 = "Location: " + job4.getLocation();
+    String testString5 = "Position Type: " + job4.getPositionType ();
+    String testString6 = "Core Competency: " + job4.getCoreCompetency ();
 
     assertTrue(job4.toString().contains ("ID"));
         assertTrue(job4.toString().contains("Name: "));
