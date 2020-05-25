@@ -99,10 +99,12 @@ public class Job {
     public String toString()
     {
 
-        return string + this.getID() + "\nID";
+        return toString () + this.getID("/nID + n/Name + n/employer etc");
 
 
     }
+
+}
 
    //?????
 
