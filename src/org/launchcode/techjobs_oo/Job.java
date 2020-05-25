@@ -105,13 +105,14 @@ public class Job {
         String testString4 = "Location: " + this.getLocation();
         String testString5 = "Position Type: " + this.getPositionType ();
         String testString6 = "Core Competency: " + this.getCoreCompetency ();
-
+        String dataNotAvailable = "Data not available";
         return testString + "/n" +
                 testString2  + "/n" +
                 testString3 + "/n" +
                 testString4 + "/n" +
                 testString5 + "/n" +
-                testString6 + "/n"
+                testString6 ;
+
 
     }
 }

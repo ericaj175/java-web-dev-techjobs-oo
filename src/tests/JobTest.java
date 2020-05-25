@@ -44,8 +44,6 @@ class JobTest {
     public void testJobsForEquality()  {
         Job job1 = new Job("picker");
         Job job2 = new Job("picker");
-        job1.setId(1);
-        job2.setId(2);
         assertNotEquals(job1, job2);
 
     }
@@ -62,6 +60,7 @@ class JobTest {
     String testString4 = "Location: " + job4.getLocation();
     String testString5 = "Position Type: " + job4.getPositionType ();
     String testString6 = "Core Competency: " + job4.getCoreCompetency ();
+    String dataNotAvailable = "Data not available";
 
     assertTrue(job4.toString().contains (testString));
         assertTrue(job4.toString().contains(testString2));
@@ -69,8 +68,11 @@ class JobTest {
         assertTrue(job4.toString().contains(testString4));
         assertTrue(job4.toString().contains(testString5));
        assertTrue(job4.toString().contains(testString6));
+       assertFalse(job4.toString ().contains(dataNotAvailable));
     }
 
+
+ }
 
 
 
