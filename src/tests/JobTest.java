@@ -69,10 +69,10 @@ class JobTest {
         assertTrue(job4.toString().contains(testString5));
        assertTrue(job4.toString().contains(testString6));
        assertTrue(job4.toString().contains("Name: " + dataNotAvailable));
-       assertTrue(job4.toString (). contains("Employer:" + dataNotAvailable));
-       assertTrue(job4.toString (). contains("Location:" + dataNotAvailable));
-       assertTrue(job4.toString ().contains("Position Type:" + dataNotAvailable));
-       assertTrue(job4.toString ().contains("Core Competency: " + dataNotAvailable));
+       assertTrue(job4.toString().contains("Employer:" + dataNotAvailable));
+       assertTrue(job4.toString().contains("Location:" + dataNotAvailable));
+       assertTrue(job4.toString().contains("Position Type:" + dataNotAvailable));
+       assertTrue(job4.toString().contains("Core Competency: " + dataNotAvailable));
     }
 
 
@@ -80,6 +80,6 @@ class JobTest {
 
 
 
-}
+
     // assertFalse ( condition:this.job1 == = this.job2)
      //assertFalse ( condiiton this.)

@@ -95,7 +95,6 @@ public class Job {
     }
 
 
-
     public String toString()
     {
 
@@ -105,7 +104,7 @@ public class Job {
         String testString4 = "Location: " + this.getLocation();
         String testString5 = "Position Type: " + this.getPositionType ();
         String testString6 = "Core Competency: " + this.getCoreCompetency ();
-        String dataNotAvailable = "Data not available";
+        String dataNotAvailable = "Data not available" +this.name;
         return testString + "/n" +
                 testString2  + "/n" +
                 testString3 + "/n" +
