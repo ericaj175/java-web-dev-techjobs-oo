@@ -63,12 +63,12 @@ class JobTest {
     String testString5 = "PositionType: " + job4.getId();
     String testString6 = "CoreCompetency: " + job4.getId();
 
-    assertTrue(job4.toString().contains ("ID" ));
-        assertTrue(job4.toString().contains("Name: " );
-        assertTrue(job4.toString().contains("Employer: " );
-        assertTrue(job4.toString().contains("Location: " );
-        assertTrue(job4.toString().contains("Position Type: " );
-       assertTrue(job4.toString().contains("Core Competency: " );
+    assertTrue(job4.toString().contains ("ID"));
+        assertTrue(job4.toString().contains("Name: "));
+        assertTrue(job4.toString().contains("Employer: "));
+        assertTrue(job4.toString().contains("Location: " ));
+        assertTrue(job4.toString().contains("Position Type: " ));
+       assertTrue(job4.toString().contains("Core Competency: " ));
     }
 
 
