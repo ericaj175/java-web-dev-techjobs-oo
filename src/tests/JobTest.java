@@ -68,7 +68,11 @@ class JobTest {
         assertTrue(job4.toString().contains(testString4));
         assertTrue(job4.toString().contains(testString5));
        assertTrue(job4.toString().contains(testString6));
-       assertFalse(job4.toString ().contains(dataNotAvailable));
+       assertTrue(job4.toString().contains("Name: " + dataNotAvailable));
+       assertTrue(job4.toString (). contains("Employer:" + dataNotAvailable));
+       assertTrue(job4.toString (). contains("Location:" + dataNotAvailable));
+       assertTrue(job4.toString ().contains("Position Type:" + dataNotAvailable));
+       assertTrue(job4.toString ().contains("Core Competency: " + dataNotAvailable));
     }
 
 

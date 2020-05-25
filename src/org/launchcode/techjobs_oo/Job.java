@@ -112,6 +112,7 @@ public class Job {
                 testString4 + "/n" +
                 testString5 + "/n" +
                 testString6 ;
+                dataNotAvailable + "/n"
 
 
     }
