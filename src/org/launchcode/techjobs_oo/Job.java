@@ -18,8 +18,9 @@ public class Job {
         id = nextId;
         nextId++;
     }
-    public Job(String name,  Employer employer,
-                   Location location, PositionType positionType, CoreCompetency coreCompetency) {
+
+    public Job(String name, Employer employer,
+               Location location, PositionType positionType, CoreCompetency coreCompetency) {
         this.name = name;
         this.employer = employer;
         this.location = location;
@@ -92,10 +93,18 @@ public class Job {
     public int hashCode() {
         return Objects.hash ( id, name, employer, location, positionType, coreCompetency );
     }
+}
+
+
+    public String toString()
+    {
+
+        return value;
+        System.out.println(job4.toString());
+    }
 
    //?????
-    //public void setId(int i) {
-    }
+
 //TO STRING EXAMPLE?
 //Student person = new Student("Violet");
 //System.out.println(testString.toString());
