@@ -99,8 +99,9 @@ public class Job {
     public String toString()
     {
 
-        return value;
-        System.out.println(job4.toString());
+        return string + this.getID() + "\nID";
+
+
     }
 
    //?????
