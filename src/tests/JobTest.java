@@ -56,18 +56,19 @@ class JobTest {
                 new Location ( "Desert" ),
                 new PositionType ( "Quality control" ),
                 new CoreCompetency ( "Persistence" ) );
-    String testString = "/nID: " + job4.getId();
-    String testString2 = "/nName: " + job4.getId();
-    String testString3 = "/nEmployer: " + job4.getId();
-    String testString4 = "/nLocation: " + job4.getId();
-    String testString5 = "/nPositionType: " + job4.getId();
-    String testString6 = "/nCoreCompetency: " + job4.getId();
+    String testString = "ID: " + job4.getId();
+    String testString2 = "Name: " + job4.getId();
+    String testString3 = "Employer: " + job4.getId();
+    String testString4 = "Location: " + job4.getId();
+    String testString5 = "PositionType: " + job4.getId();
+    String testString6 = "CoreCompetency: " + job4.getId();
 
-    assertEquals(job4.toString(),"/nID: " );
-        //assertEquals(job4.toString(),"/nName: " );
-        //assertEquals(job4.toString(),"/nEmployer: " );
-       // assertEquals(job4.toString(), "/nLocation: " );
-       // assertEquals(job4.toString(),"/nCoreCompetency: " );
+    assertTrue(job4.toString().contains ("ID" ));
+        assertTrue(job4.toString().contains("Name: " );
+        assertTrue(job4.toString().contains("Employer: " );
+        assertTrue(job4.toString().contains("Location: " );
+        assertTrue(job4.toString().contains("Position Type: " );
+       assertTrue(job4.toString().contains("Core Competency: " );
     }
 
 
