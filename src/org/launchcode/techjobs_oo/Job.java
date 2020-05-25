@@ -93,17 +93,27 @@ public class Job {
     public int hashCode() {
         return Objects.hash ( id, name, employer, location, positionType, coreCompetency );
     }
-}
+
 
 
     public String toString()
     {
 
-        return toString () + this.getID("/nID + n/Name + n/employer etc");
+        String testString = "ID: " + this.getId();
+        String testString2 = "Name: " + this.getName();
+        String testString3 = "Employer: " + this.getEmployer();
+        String testString4 = "Location: " + this.getLocation();
+        String testString5 = "Position Type: " + this.getPositionType ();
+        String testString6 = "Core Competency: " + this.getCoreCompetency ();
 
+        return testString + "/n" +
+                testString2  + "/n" +
+                testString3 + "/n" +
+                testString4 + "/n" +
+                testString5 + "/n" +
+                testString6 + "/n"
 
     }
-
 }
 
    //?????
