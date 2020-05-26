@@ -21,6 +21,8 @@ public class Job {
 
     public Job(String name, Employer employer,
                Location location, PositionType positionType, CoreCompetency coreCompetency) {
+
+        this();
         this.name = name;
         this.employer = employer;
         this.location = location;
@@ -28,8 +30,6 @@ public class Job {
         this.coreCompetency = coreCompetency;
     }
 
-    public Job(String product_tester) {
-    }
 
     @Override
     public boolean equals(Object o) {
@@ -37,11 +37,7 @@ public class Job {
         if (!(o instanceof Job)) return false;
         Job job = (Job) o;
         return id == job.id;
-               /* Objects.equals ( name, job.name ) &&
-                Objects.equals ( employer, job.employer ) &&
-                Objects.equals ( location, job.location ) &&
-                Objects.equals ( positionType, job.positionType ) &&
-                Objects.equals ( coreCompetency, job.coreCompetency );*/
+
     }
 
     public int getId() {
@@ -104,12 +100,12 @@ public class Job {
         String testString4 = "Location: " + this.getLocation();
         String testString5 = "Position Type: " + this.getPositionType ();
         String testString6 = "Core Competency: " + this.getCoreCompetency ();
-        String dataNotAvailable = "Data not available" +this.name;
-        return testString + "/n" +
-                testString2  + "/n" +
-                testString3 + "/n" +
-                testString4 + "/n" +
-                testString5 + "/n" +
+        //String dataNotAvailable = "Data not available" +this.name;
+        return testString + "\n" +
+                testString2  + "\n" +
+                testString3 + "\n" +
+                testString4 + "\n" +
+                testString5 + "\n" +
                 testString6 ;
 
 

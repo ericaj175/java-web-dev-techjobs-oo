@@ -42,14 +42,22 @@ class JobTest {
 
     @Test
     public void testJobsForEquality()  {
-        Job job1 = new Job("picker");
-        Job job2 = new Job("picker");
+        Job job1 = new Job("Product Tester",
+        new Employer ("ACME" ),
+        new Location ( "Desert" ),
+                new PositionType ( "Quality control" ),
+                new CoreCompetency ( "Persistence" ));
+        Job job2 = new Job("Product Tester",
+                new Employer ("ACME" ),
+                new Location ( "Desert" ),
+                new PositionType ( "Quality control" ),
+                new CoreCompetency ( "Persistence" ));
         assertNotEquals(job1, job2);
 
     }
     @Test
     public void objectThatReturnsAString() {
-        job4 = new Job ( "Product Tester",
+        job4 =  new Job ( "Product Tester",
                 new Employer ( "ACME" ),
                 new Location ( "Desert" ),
                 new PositionType ( "Quality control" ),
@@ -68,11 +76,11 @@ class JobTest {
         assertTrue(job4.toString().contains(testString4));
         assertTrue(job4.toString().contains(testString5));
        assertTrue(job4.toString().contains(testString6));
-       assertTrue(job4.toString().contains("Name: " + dataNotAvailable));
-       assertTrue(job4.toString().contains("Employer:" + dataNotAvailable));
-       assertTrue(job4.toString().contains("Location:" + dataNotAvailable));
-       assertTrue(job4.toString().contains("Position Type:" + dataNotAvailable));
-       assertTrue(job4.toString().contains("Core Competency: " + dataNotAvailable));
+       assertFalse (job4.toString().contains("Name: " + dataNotAvailable));
+        assertFalse (job4.toString ().contains ( "Employer:" + dataNotAvailable ) );
+       assertFalse(job4.toString().contains("Location:" + dataNotAvailable));
+       assertFalse(job4.toString().contains("Position Type:" + dataNotAvailable));
+       assertFalse(job4.toString().contains("Core Competency: " + dataNotAvailable));
     }
 
 
