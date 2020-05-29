@@ -99,7 +99,8 @@ public class Job {
 //        String dataNotAvailable = "Data not available";
 
         String nameString;
-        if (this.getName () == null) {
+        if (this.getName() == null ||
+        this.getName().isEmpty ()){
             nameString = "Name: " + "Data not available";
         } else
             nameString = "Name: " + this.getName ();

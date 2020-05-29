@@ -63,6 +63,7 @@ class JobTest {
                 new Location ( "Desert" ),
                 new PositionType ( "Quality control" ),
                 new CoreCompetency ( "Persistence" ) );
+
     String testString = "ID: " + job4.getId();
     String testString2 = "Name: " + job4.getName();
     String testString3 = "Employer: " + job4.getEmployer();
