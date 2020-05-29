@@ -57,7 +57,8 @@ class JobTest {
     }
     @Test
     public void objectThatReturnsAString() {
-        job4 =  new Job ( "Product Tester",
+        job4 =
+                new Job ( "Product Tester",
                 new Employer ( "ACME" ),
                 new Location ( "Desert" ),
                 new PositionType ( "Quality control" ),
@@ -83,11 +84,19 @@ class JobTest {
        assertFalse(job4.toString().contains("Core Competency: " + dataNotAvailable));
     }
 
+    @Test
+    public void testToStringWhenDataNotAvailable() {
+        job4 =
+                new Job ( "",
+                new Employer ( "ACME" ),
+                new Location ( "Desert" ),
+                new PositionType ( "Quality control" ),
+                new CoreCompetency ( "Persistence" ) );
+        String dataNotAvailable = "Data not available";
+        assertTrue (job4.toString().contains("Name: "+ dataNotAvailable));
+ }}
 
- }
 
 
 
 
-    // assertFalse ( condition:this.job1 == = this.job2)
-     //assertFalse ( condiiton this.)

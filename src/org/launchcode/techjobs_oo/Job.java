@@ -22,7 +22,7 @@ public class Job {
     public Job(String name, Employer employer,
                Location location, PositionType positionType, CoreCompetency coreCompetency) {
 
-        this();
+        this ();
         this.name = name;
         this.employer = employer;
         this.location = location;
@@ -91,41 +91,62 @@ public class Job {
     }
 
 
-    public String toString()
-    {
+    public String toString() {
 
-        String testString = "ID: " + this.getId();
-        String testString2 = "Name: " + this.getName();
-        String testString3 = "Employer: " + this.getEmployer();
-        String testString4 = "Location: " + this.getLocation();
+        String testString = "ID: " + this.getId ();
+        String testString2 = "Name: " + this.getName ();
+        String testString3 = "Employer: " + this.getEmployer ();
+        String testString4 = "Location: " + this.getLocation ();
         String testString5 = "Position Type: " + this.getPositionType ();
         String testString6 = "Core Competency: " + this.getCoreCompetency ();
-        //String dataNotAvailable = "Data not available" +this.name;
+        String dataNotAvailable = "Data not available";
+
         return testString + "\n" +
-                testString2  + "\n" +
+                testString2 + "\n" +
                 testString3 + "\n" +
                 testString4 + "\n" +
                 testString5 + "\n" +
-                testString6 ;
+                testString6;
+    }{
+        String nameString;
+        if(this.getName() == null){
+        nameString = "Name:"  + "Data not available";
+                                    }
+        else {
+            nameString = "Name: " + this.getName ();
+            }
+           //
+            String employerString;
 
+            if(this.getEmployer () == null){
+                employerString = "Employer: "  + "Data not available";
+                                            }
+            else {
+                employerString = "Employer:  " + this.getEmployer ();
+                    }
+                //
+                String locationString;
+                if(this.getLocation() == null){
+                    locationString = "Location"  + "Data not available";
+                                             }
+                else {
+                    locationString = "Location " + this.getLocation ();
+                     }
+                //
+                    String positionTypeString;
+                    if(this.getPositionType () == null){
+                        positionTypeString = "Position Type"  + "Data not available";
+                                                        }
+                    else {
+                        positionTypeString = "Position Type " + this.getPositionType ();
+                         }
+                        //
 
+                        String CoreCompetencyString;
+                        if(this.getCoreCompetency () == null){
+                            CoreCompetencyString = "Core Competency"  + "Data not available";
+                        }
+                        else {
+                            CoreCompetencyString = "Core Competency" + this.getCoreCompetency ();
 
-    }
-}
-
-   //?????
-
-//TO STRING EXAMPLE?
-//Student person = new Student("Violet");
-//System.out.println(testString.toString());
-
-// TODO: Add two constructors - one to initialize a unique ID and a second to initialize the
-    //  other five fields. The second constructor should also call the first in order to initialize
-    //  the 'id' field.
-
-    // TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields
-    //  match.
-
-    // TODO: Add getters for each field EXCEPT nextId. Add setters for each field EXCEPT nextID
-    //  and id.
-
+                        }}}
